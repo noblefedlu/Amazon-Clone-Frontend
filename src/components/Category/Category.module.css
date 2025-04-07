@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    .Category
+{
+    height: 250px;
+    width: 250px;
+    background-color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+.Category img{
+    width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    padding: 0px 10px;
+
+}
+.Category a{
+    text-decoration: none;
+    color:rgb(35,35,35)
+}
+.Category span{
+    padding: 5px;
+    font-weight: bold;
+    font-size: medium;
+}
+.Category p{
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(9,132,209);
+}
+/* style for container */
+.Category_container
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  /* grid-template-columns: repeat(auto-fit,minmax(350px,1fr));*/
+   max-width: 1600px;
+    place-items: center;
+    gap: 50px;
+    margin-top: -25%;
+}
